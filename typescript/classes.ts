@@ -45,7 +45,7 @@ class Carro {
 }
 
 const carro = new Carro('Chevrolet', 'Prisma', 250);
-carro.acelerar();
+carro.acelerar(); 
 
 // Herança
 class Camaro extends Carro {
