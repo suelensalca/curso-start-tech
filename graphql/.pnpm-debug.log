@@ -1,0 +1,30 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "total": 3
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "@dev-demands/server@1.0.0 start: `node -r esm .`\nExit status 1",
+      "code": "ELIFECYCLE",
+      "stack": "Error: @dev-demands/server@1.0.0 start: `node -r esm .`\nExit status 1\n    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:106006:20)\n    at EventEmitter.emit (events.js:400:28)\n    at ChildProcess.<anonymous> (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:94312:18)\n    at ChildProcess.emit (events.js:400:28)\n    at maybeClose (internal/child_process.js:1055:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
+    }
+  },
+  "2 error pnpm": {
+    "errno": 1,
+    "code": "ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL",
+    "pkgid": "@dev-demands/server@1.0.0",
+    "stage": "start",
+    "script": "node -r esm .",
+    "pkgname": "@dev-demands/server",
+    "prefix": "/home/suelen/projetos/start-tech/graphql/packages/server/src",
+    "err": {
+      "name": "Error",
+      "message": "@dev-demands/server@1.0.0 start: `node -r esm .`\nExit status 1",
+      "code": "ERR_PNPM_RECURSIVE_RUN_FIRST_FAIL",
+      "stack": "Error: @dev-demands/server@1.0.0 start: `node -r esm .`\nExit status 1\n    at EventEmitter.<anonymous> (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:106006:20)\n    at EventEmitter.emit (events.js:400:28)\n    at ChildProcess.<anonymous> (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:94312:18)\n    at ChildProcess.emit (events.js:400:28)\n    at maybeClose (internal/child_process.js:1055:16)\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:288:5)"
+    }
+  },
+  "3 warn pnpm:global": " Local package.json exists, but node_modules missing, did you mean to install?"
+}
