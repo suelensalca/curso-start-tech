@@ -1,7 +1,8 @@
 import Sequelize, { Model } from 'sequelize';
 
+// @ts-ignore
 class User extends Model {
-    static config(sequelize) {
+    static init(sequelize) {
         // @ts-ignore
         super.init({
             name: Sequelize.STRING,

@@ -10,12 +10,9 @@ class Database{
     }
 
     init() {
-        this.connection = new Sequelize(databaseConfig.database, databaseConfig.username, databaseConfig.password, {
-            host: databaseConfig.host,
-            // @ts-ignore
-            dialect: databaseConfig.dialect
-        });
-        models.map( model => model.config(this.connection))
+        // @ts-ignore
+        this.connection = new Sequelize(databaseConfig);
+        models.map( model => model.init(this.connection))
     }
 }
 
